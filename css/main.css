@@ -1,0 +1,33 @@
+.cards{
+  width: 300px;
+  height: 400px;
+  height:fit-content;
+  border: 2px solid white;
+  border-radius:10px;
+}
+.edit{
+  background-color: transparent;
+  color: grey;
+  width: 45px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+.edit:hover{
+  color: white;
+  background-color: rgba(30, 205, 30, 0.614);
+}
+.dis-none{
+  display: none;
+}
+.dis-block{
+  display: block!important;
+}
+.deleteCard{
+  width: 5px;
+  height: 5px;
+  background-image: url("../img/X.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
