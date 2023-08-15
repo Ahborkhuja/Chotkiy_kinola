@@ -20,7 +20,7 @@ const sea_n = document.querySelector("#Stext");
 const sea_y = document.querySelector("#Syear");
 // variables
 
-fetch("https://api.themoviedb.org/3/movie/550?api_key={api_key}&callback=test")
+fetch("https://api.themoviedb.org/3/movie/changes?page=1")
 let mas = [];
 console.log(mas);
 let sea_cards = [];
@@ -200,7 +200,7 @@ if (!token) {
   window.location.replace("../index.html")
 }
 
-let url = "https://api.themoviedb.org/3/movie/550?api_key={api_key}&callback=test"
+let url = "https://api.themoviedb.org/3/movie/changes?page=1"
 let getData = async () => {
   let res = await fetch(url);
 
