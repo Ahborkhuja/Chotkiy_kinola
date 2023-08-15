@@ -202,7 +202,11 @@ if (!token) {
 
 let url = "https://api.themoviedb.org/3/movie/changes?page=1"
 let getData = async () => {
-  let res = await fetch(url);
+  let res = await fetch(url,{
+    header:{
+      "accept": "application/json"
+    }
+  });
 
   let data = await res.json();
 }
